@@ -28,7 +28,7 @@ public class Employee {
     private String email;
 
     @Column(name = "dob")
-    private Date dateOfBirth;
+    private String dateOfBirth;
 
     public long getId() {
         return id;
@@ -70,11 +70,11 @@ public class Employee {
         this.email = email;
     }
 
-    public Date getDateOfBirth() {
+    public String getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(Date dateOfBirth) {
+    public void setDateOfBirth(String dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 

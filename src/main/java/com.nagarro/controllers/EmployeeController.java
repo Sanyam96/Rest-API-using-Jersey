@@ -65,14 +65,14 @@ public class EmployeeController {
 //            e.printStackTrace();
 //        }
 //        emp.setDateOfBirth(date);
-        String empDateOfBirth = employee.getDateOfBirth().toString();
-        Date date = null;
-        try {
-            date = new SimpleDateFormat("dd/MM/yyyy").parse(empDateOfBirth);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-        employee.setDateOfBirth(date);
+//        String empDateOfBirth = employee.getDateOfBirth().toString();
+//        Date date = null;
+//        try {
+//            date = new SimpleDateFormat("dd/MM/yyyy").parse(empDateOfBirth);
+//        } catch (ParseException e) {
+//            e.printStackTrace();
+//        }
+//        employee.setDateOfBirth(date);
         employeeService.addEmployee(employee);
     }
 
@@ -93,14 +93,14 @@ public class EmployeeController {
 //        emp.setEmployeeName(empName);
 //        emp.setLocation(empLocation);
 //        emp.setEmail(empEmail);
-        String empDateOfBirth = employee.getDateOfBirth().toString();
-        Date date = null;
-        try {
-            date = new SimpleDateFormat("dd/MM/yyyy").parse(empDateOfBirth);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-        employee.setDateOfBirth(date);
+//        String empDateOfBirth = employee.getDateOfBirth().toString();
+//        Date date = null;
+//        try {
+//            date = new SimpleDateFormat("dd/MM/yyyy").parse(empDateOfBirth);
+//        } catch (ParseException e) {
+//            e.printStackTrace();
+//        }
+//        employee.setDateOfBirth(date);
         employeeService.updateEmployee(employee);
     }
 
