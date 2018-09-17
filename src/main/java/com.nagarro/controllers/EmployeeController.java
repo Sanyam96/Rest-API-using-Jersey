@@ -43,54 +43,65 @@ public class EmployeeController {
 
     @POST
     @Path("/employee")
-    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+    @Consumes({MediaType.APPLICATION_FORM_URLENCODED, MediaType.APPLICATION_JSON})
     @Produces(MediaType.APPLICATION_JSON)
     public void addEmployee(
-            @FormParam("employeeCode") long empCode,
-            @FormParam("employeeName") String empName,
-            @FormParam("location") String empLocation,
-            @FormParam("email") String empEmail,
-            @FormParam("dateOfBirth") String empDateOfBirth
+//            @FormParam("employeeCode") long empCode,
+//            @FormParam("employeeName") String empName,
+//            @FormParam("location") String empLocation,
+//            @FormParam("email") String empEmail,
+//            @FormParam("dateOfBirth") String empDateOfBirth
+            Employee employee
     ) {
-        Employee emp = new Employee();
-        emp.setEmployeeCode(empCode);
-        emp.setEmployeeName(empName);
-        emp.setLocation(empLocation);
-        emp.setEmail(empEmail);
+//        Employee emp = new Employee();
+//        emp.setEmployeeCode(empCode);
+//        emp.setEmployeeName(empName);
+//        emp.setLocation(empLocation);
+//        emp.setEmail(empEmail);
+//        Date date = null;
+//        try {
+//            date = new SimpleDateFormat("dd/MM/yyyy").parse(empDateOfBirth);
+//        } catch (ParseException e) {
+//            e.printStackTrace();
+//        }
+//        emp.setDateOfBirth(date);
+        String empDateOfBirth = employee.getDateOfBirth().toString();
         Date date = null;
         try {
             date = new SimpleDateFormat("dd/MM/yyyy").parse(empDateOfBirth);
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        emp.setDateOfBirth(date);
-        employeeService.addEmployee(emp);
+        employee.setDateOfBirth(date);
+        employeeService.addEmployee(employee);
     }
 
     @PUT
     @Path("/employee")
-    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+    @Consumes({MediaType.APPLICATION_FORM_URLENCODED, MediaType.APPLICATION_JSON})
     @Produces(MediaType.APPLICATION_JSON)
     public void updateEmployee(
-            @FormParam("employeeCode") long empCode,
-            @FormParam("employeeName") String empName,
-            @FormParam("location") String empLocation,
-            @FormParam("email") String empEmail,
-            @FormParam("dateOfBirth") String empDateOfBirth
+//            @FormParam("employeeCode") long empCode,
+//            @FormParam("employeeName") String empName,
+//            @FormParam("location") String empLocation,
+//            @FormParam("email") String empEmail,
+//            @FormParam("dateOfBirth") String empDateOfBirth
+            Employee employee
     ) {
-        Employee emp = new Employee();
-        emp.setEmployeeCode(empCode);
-        emp.setEmployeeName(empName);
-        emp.setLocation(empLocation);
-        emp.setEmail(empEmail);
+//        Employee emp = new Employee();
+//        emp.setEmployeeCode(empCode);
+//        emp.setEmployeeName(empName);
+//        emp.setLocation(empLocation);
+//        emp.setEmail(empEmail);
+        String empDateOfBirth = employee.getDateOfBirth().toString();
         Date date = null;
         try {
             date = new SimpleDateFormat("dd/MM/yyyy").parse(empDateOfBirth);
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        emp.setDateOfBirth(date);
-        employeeService.updateEmployee(emp);
+        employee.setDateOfBirth(date);
+        employeeService.updateEmployee(employee);
     }
 
 }

@@ -1,5 +1,4 @@
 com/nagarro/models/Employee.class
-com/nagarro/App.class
 com/nagarro/utils/SessionUtil.class
 com/nagarro/controllers/EmployeeController.class
 com/nagarro/service/EmployeeService.class
