@@ -14,9 +14,6 @@ import java.util.List;
 @Transactional
 public class EmployeeService {
 
-//    @Autowired
-//    EmployeeRepository employeeRepository;
-
     EmployeeRepository employeeRepository = new EmployeeRepository();
 
     @Transactional

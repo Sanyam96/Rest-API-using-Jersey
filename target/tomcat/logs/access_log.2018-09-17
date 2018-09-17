@@ -78,3 +78,12 @@
 127.0.0.1 - - [17/Sep/2018:13:54:12 +0530] "GET /employees/ HTTP/1.1" 200 270 http-bio-9898-exec-5 10
 127.0.0.1 - - [17/Sep/2018:13:54:24 +0530] "PUT /employee/ HTTP/1.1" 204 - http-bio-9898-exec-7 32
 127.0.0.1 - - [17/Sep/2018:13:54:24 +0530] "GET /employees/ HTTP/1.1" 200 270 http-bio-9898-exec-8 6
+127.0.0.1 - - [17/Sep/2018:15:19:13 +0530] "GET /employees/ HTTP/1.1" 200 270 http-bio-9898-exec-1 1375
+127.0.0.1 - - [17/Sep/2018:15:19:24 +0530] "PUT /employee/ HTTP/1.1" 204 - http-bio-9898-exec-3 40
+127.0.0.1 - - [17/Sep/2018:15:19:24 +0530] "GET /employees/ HTTP/1.1" 200 269 http-bio-9898-exec-4 3
+127.0.0.1 - - [17/Sep/2018:15:19:29 +0530] "GET /employees/ HTTP/1.1" 200 269 http-bio-9898-exec-5 4
+127.0.0.1 - - [17/Sep/2018:15:19:52 +0530] "POST /employee/ HTTP/1.1" 204 - http-bio-9898-exec-7 15
+127.0.0.1 - - [17/Sep/2018:15:19:52 +0530] "POST /employee/ HTTP/1.1" 204 - http-bio-9898-exec-8 10
+127.0.0.1 - - [17/Sep/2018:15:19:52 +0530] "GET /employees/ HTTP/1.1" 200 503 http-bio-9898-exec-9 4
+127.0.0.1 - - [17/Sep/2018:15:20:10 +0530] "POST /employee/ HTTP/1.1" 500 11327 http-bio-9898-exec-1 153
+0:0:0:0:0:0:0:1 - - [17/Sep/2018:15:21:33 +0530] "GET /employees HTTP/1.1" 200 503 http-bio-9898-exec-3 8

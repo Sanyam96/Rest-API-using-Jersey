@@ -1,7 +1,6 @@
 package com.nagarro.models;
 
 import javax.persistence.*;
-import java.util.Date;
 
 /**
  * @author Sanyam Goel created on 16/9/18

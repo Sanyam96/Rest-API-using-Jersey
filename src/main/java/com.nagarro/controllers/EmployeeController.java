@@ -6,9 +6,6 @@ import com.nagarro.service.EmployeeService;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -17,16 +14,12 @@ import java.util.List;
 @Path("/")
 public class EmployeeController {
 
-    private EmployeeRepository employeeRepository = new EmployeeRepository();
-
     private EmployeeService employeeService = new EmployeeService();
 
     @GET
     @Path("/employees")
     @Produces(MediaType.APPLICATION_JSON)
     public List<Employee> getEmployees() {
-
-//        List employees = employeeRepository.getEmployees();
         List<Employee> employees = employeeService.getAllEmployees();
         return employees;
     }
